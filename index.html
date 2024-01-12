@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Slam Fitness</title>
+  <link rel="icon" type="image/x-icon" href="./images/gym logo.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <div class="logo">
+      <a class="navbar-brand" href="home.html"><img src="./images/gym logo.png" alt="LOGO" class="image-responsive"> SLAM FITNESS</a>
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productmain.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subscription.html">Subscription</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              Contact
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mailto:mohammedkaif743@gmail.com">Email</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/slamfitnessstudio/">Instagram</a></li>
+              <li><a class="dropdown-item" href="#" onclick="scrollToBottom()">Franchise Enquiry</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function scrollToBottom(){
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
+<!--carousel-->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner sizing">
+      <div class="carousel-item active">
+        <img src="./images/gym.webp" alt="Los Angeles" class="d-block image-responsive" style="width:100%"> <!--style="width:100%"-->
+      </div>
+      <div class="carousel-item">
+        <img src="./images/gym2.jpg" alt="Chicago" class="d-block image-responsive" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/gym_1.jpg" alt="New York" class="d-block image-responsive" style="width:100%"><!--height="640px"-->
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-----sub title------>
+  <div class="sub_head">
+     BEST SELLERS
+  </div>
+
+  <!--product cards-->
+<!--product cards-->
+<div class="container">
+  <div class="row_1">
+      <div class="card-group">
+        <div class="card .col-lg-4 .col-md-6 .col-xl-3 .col-sm-12" style="width: 400px;">
+          <img src="./images/preworkout.jpg" class="image-responsive" alt="">
+          <div class="card-body">
+            <h4 class="card-title">MuscleBlaze Pre Workout</h4>
+            <p class="card-text">MuscleBlaze Pre Workout 200, 200mg Caffeine, 2200mg Citrulline (Fruit Splash, Pack of 100g Powder, 20 servings)</p>
+            <!-- <a href="#" class="btn btn-secondary" style="padding: 10px;" data-toggle="modal" data-target="#exampleModalCenter">BUY NOW</a> -->
+            <button type="button" class="btn btn-dark btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenter" style="width: 100%;">Buy Now!</button>
+            <!-- <a href="" data-toggle="modal" data-target="#exampleModalCenter" style="padding-left: 90%;">
+            <img src="./icon/shopping-cart.png" alt="cart"  style="width: 30px;" height="30px">
+            </a> -->
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CheckOut</h5>
+        <button type="button" class="close btn btn-light" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/preworkout.jpg" alt="" style="width: 110px; height: 110px;">
+        <p style="font-weight: bold; font-size: 25px;">₹ 649</p>
+        <p class="card-text">MuscleBlaze Pre Workout 200, 200mg Caffeine, 2200mg Citrulline (Pack of 100g Powder, 20 servings)</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Proceed</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <!--  -->
+        <div class="card .col-lg-4 .col-md-6 .col-xl-3 .col-sm-12" style="width: 400px;">
+          <img src="./images/bath tub.jpg" class="image-responsive" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Large Size Ice Bath Tub for Athletes</h4>
+            <p class="card-text">Essensolife Ice Bath Tub,Multiple Layered Portable Ice Bath Tub for Recovery and Cold Water Therapy</p>
+            <button type="button" class="btn btn-dark btn-lg btn-block" data-toggle="modal" data-target="#ice" style="width: 100%;">Buy Now!</button>
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="ice" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CheckOut</h5>
+        <button type="button" class="close btn btn-light" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/bath tub.jpg" alt="" style="width: 110px; height: 110px;">
+        <p style="font-weight: bold; font-size: 25px;">₹ 10,099</p>
+        <p class="card-text">Essensolife Ice Bath Tub for Athletes,Multiple Layered Portable Ice Bath Tub for Recovery and Cold Water Therapy</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Proceed</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <!--  -->
+        <div class="card .col-lg-4 .col-md-6 .col-xl-3 .col-sm-12" style="width: 400px;">
+          <img src="./images/muscleBlaze.jpg" class="image-responsive" alt="..."> <!--card-img-top-->
+          <div class="card-body">
+            <h4 class="card-title">MuscleBlaze 100% Whey Protein</h4>
+            <p class="card-text">MuscleBlaze Biozyme Iso-Zero, Low Carb, 100% Pure Whey Protein Isolate with USA Patent-Published Enhanced Absorption Formula (EAF®)</p>
+            <!-- <a href="#" class="btn btn-primary" style="padding: 10px;">BUY NOW</a> -->
+            <button type="button" class="btn btn-dark btn-lg btn-block" data-toggle="modal" data-target="#whey" style="width: 100%;">Buy Now!</button>
+          </div>
+          <!-- Modal -->
+<div class="modal fade" id="whey" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CheckOut</h5>
+        <button type="button" class="close btn btn-light" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/muscleBlaze.jpg" alt="" style="width: 110px; height: 110px;">
+        <p style="font-weight: bold; font-size: 25px;">₹ 3,249</p>
+        <p class="card-text">MuscleBlaze Biozyme Iso-Zero, Low Carb, 100% Pure Whey Protein Isolate with USA Patent-Published Enhanced Absorption Formula (EAF®)</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Proceed</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <!-- membership -->
+    <!--  
+    <h4 class="sub_head_2">SLAM FITNESS</h4>
+    <div class="middle container">
+      <img src="./images/slam.jpg" alt="" id="join_img">
+      <p id="nor">SLAM Fitness is not a gym; it is a way of life. It is widely recognised as a premium that promotes a healthy lifestyle. It is one of the best fitness centers in Chennai, a preferred destination for several top-notch training programs.</p>
+      <p id="bol">Our personalized designs will assist you in having the best time of your life. We provide various services such as functional training, fitness boot camp, body transformation, weight loss, and weight gain.</p>
+    </div>
+  -->
+  <!-- <section class="us_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why Choose Us
+        </h2>
+      </div>
+
+      <div class="us_container ">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="./images/icon1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  QUALITY EQUIPMENT
+                </h5>
+                <p>
+                  This type of equipment is known for its durability, performance, and often higher cost compared to home-use.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="./images/icon2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  NUTRITION
+                </h5>
+                <p>
+                  While it's best to get nutrients from whole foods, supplements can be useful to fill gaps in your diet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="./images/icon3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  HEALTHY DIET PLAN
+                </h5>
+                <p>
+                  Creating a healthy diet plan for gym-goers involves balancing macronutrients and micronutrients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="./images/icon4.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  SPORT TRAINING
+                </h5>
+                <p>
+                  Sport training is a process designed to improve an individual's physical fitness and overall performance in a specific sport. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- Membership -->
+   <!-- <div class="mem_sec">
+    <center>
+    <img id="mem_cover" src="./images/membership_section.jpg" alt="" width="90%;" height="80%">
+    </center>
+    
+   </div> -->
+<!-- plan section -->
+        <!-- GYM Feature Start -->
+        <div class="container feature pt-5">
+          <div class="d-flex flex-column text-center mb-5">
+              <h4 class="text-danger font-weight-bold">Why Choose Us?</h4>
+              <h4 class="display-4 font-weight-bold">Benifits of Joining Our GYM</h4>
+          </div>
+          <div class="row">
+              <div class="col-md-6 mb-5">
+                  <div class="row align-items-center">
+                      <div class="col-sm-5">
+                          <img class="img-fluid mb-3 mb-sm-0" src="./images/feat_1.jpg" alt="Image">
+                          <i class="flaticon-barbell"></i>
+                      </div>
+                      <div class="col-sm-7">
+                          <h4 class="font-weight-bold">Videos Instruction</h4>
+                          <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                  <div class="row align-items-center">
+                      <div class="col-sm-5">
+                          <img class="img-fluid mb-3 mb-sm-0" src="./images/feat_2.jpg" alt="Image">
+                          <i class="flaticon-training"></i>
+                      </div>
+                      <div class="col-sm-7">
+                          <h4 class="font-weight-bold">Training Calendar</h4>
+                          <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                  <div class="row align-items-center">
+                      <div class="col-sm-5">
+                          <img class="img-fluid mb-3 mb-sm-0" src="./images/feat_3.jpg" alt="Image">
+                          <i class="flaticon-trends"></i>
+                      </div>
+                      <div class="col-sm-7">
+                          <h4 class="font-weight-bold">Free Apps & WiFi</h4>
+                          <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                  <div class="row align-items-center">
+                      <div class="col-sm-5">
+                          <img class="img-fluid mb-3 mb-sm-0" src="./images/feat_4.jpg" alt="Image">
+                          <i class="flaticon-support"></i>
+                      </div>
+                      <div class="col-sm-7">
+                          <h4 class="font-weight-bold">Community Support</h4>
+                          <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- GYM Feature End -->
+      <!-- Gym Class Start -->
+      <!-- <h4 class="display-4 font-weight-bold heading_Select" style="text-align: center;">Select What You Want</h4>
+   <div class="container gym-class mb-5">
+    <div class="row px-3">
+        <div class="col-md-6 p-0 col-lg-6 col-sm-12 col-xs-12 col-xl-6">
+            <div class="gym-class-box d-flex flex-column align-items-end justify-content-center bg-dark text-right text-white py-5 px-5">
+                <i class="flaticon-six-pack"></i>
+                <img src="" alt="">
+                <h3 class="display-4 mb-3 text-white font-weight-bold">Cross Fit</h3>
+                <p>
+                    <img class="image-responsive" src="./images/cross_fit.jpg" alt="">
+                    Are you ready to redefine your fitness journey? Look no further than CrossFit, a high-intensity, dynamic training program that blends strength, conditioning, and functional movements.
+                </p>
+                <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>
+            </div>
+        </div>
+        <div class="col-md-6 p-0 col-lg-6 col-sm-12 col-xs-12 col-xl-6">
+            <div class="gym-class-box d-flex flex-column align-items-start justify-content-center bg-secondary text-left text-white py-5 px-5">
+                <i class="flaticon-bodybuilding"></i>
+                <h3 class="display-4 mb-3 text-white font-weight-bold">Muscle Building</h3>
+                <p>
+                    <img class="image-responsive" src="./images/musle_building.jpg" alt="" height="360" width="540">
+                    Muscle building is a dynamic process that involves targeted exercises, proper nutrition, and adequate rest. understanding the basics of muscle building is crucial for achieving your fitness goals.
+                </p>
+                <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Gym Class End -->
+  <!-- map -->
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.110478402277!2d80.20809477473671!3d13.092184187234366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52643d44ef8a9f%3A0xb4a28d1b3609e4f5!2sSLAM%20Lifestyle%20and%20Fitness%20Studio%20(Annanagar)!5e0!3m2!1sen!2sin!4v1703741222681!5m2!1sen!2sin" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- FOOTER -->
+<div class="footer_start mx-0">
+<footer class="footer">
+  <div class="container1">
+    <div class="row">
+      <div class="footer-col">
+        <h4 id="foot_heading">Brand Details</h4>
+          <ul id="foot_links">
+            <li><a href="#">Authentication</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Franchise Info</a></li>
+          </ul>   
+      </div>
+      <div class="footer-col">
+        <h4 id="foot_heading">Location</h4>
+          <ul id="foot_links">
+            <li><a href="https://maps.app.goo.gl/E3UoRJfjrSYaCUjr7">Medavakkam Chennai</a></li>
+            <li><a href="https://maps.app.goo.gl/9ASBdfGtvc5AHFwg6">Anna Nagar Chennai</a></li>
+            <li><a href="https://maps.app.goo.gl/LsJkM985R7UF9rsp6">Pammal Pallavarm</a></li>
+            <li><a href="https://maps.app.goo.gl/guQagMzYVoGnjEwRA">Guindy Chennai</a></li>
+          </ul>   
+      </div>
+      <div class="footer-col">
+        <h4 id="foot_heading">Get Help</h4>
+          <ul id="foot_links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Payment Options</a></li>
+          </ul>   
+      </div>
+      <div class="footer-col">
+        <h4 id="foot_heading">Social</h4>
+         <div class="social-links" id="foot_social">
+          <a href="https://www.facebook.com/slamfitnessindia/"> <i class="fab fa-facebook-f"></i> </a>
+          <a href="https://twitter.com/i/flow/login"> <i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/slamfitnessstudio/"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:mohammedkaif743@gmail.com"> <i class="fa fa-envelope"></i></a>
+         </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+ <!--!!!!!!!!!-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

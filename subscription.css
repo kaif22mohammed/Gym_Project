@@ -1,0 +1,244 @@
+*{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: black;
+  padding-top: 80px;
+}
+.navbar{
+  background-color: black;
+}
+.navbar ul li a{
+  color: white;
+  padding-left: 8px;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.navbar ul li a:hover{
+  color: white;
+}
+/* logo */
+.logo a{
+  color: white;
+  size: 100px;
+  font-weight: 800;
+  padding-right: 8px;
+}
+.logo a:hover{
+  color: white;
+  size: 80px;
+  font-weight: 800;
+}
+.dropdown-menu li a{
+  color: white;
+  size: 100px;
+  font-weight: 800;
+  padding-right: 8px;
+}
+.dropdown-menu li a:hover{
+  color: white;
+  size: 100px;
+  font-weight: 800;
+  padding-right: 8px;
+}
+.dropdown-item {
+  color: white;
+  background-color: black;
+}
+.dropdown-item:hover{
+  color: white;
+  background-color: black;
+}
+/* for fixed navbar */
+.fixed-top{
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+/* logo image */
+.logo img{
+  height: 70px;
+  width: 110px;
+}
+/* tagline heading*/
+.sub_head{
+  padding-top: 20px;
+  font-size: 200%;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  /* text-decoration: underline; */
+  /* text-decoration-color: #630903; */
+}
+/* to make sub heading responive for smaller size*/
+@media screen and (max-width: 771px) {
+  .sub_head {
+    padding-top: 10px;
+    font-size: 40px;
+    font-size: 200%;
+  }
+}
+/* forms */
+form {
+  color: black;
+}
+.forms{
+  background-color: white;
+  width: 30%;
+  height: auto;
+  margin: 7% auto;
+  padding: 22px 10px;
+  margin-top: -5px;
+}
+.form-group{
+  padding-bottom: 10px;
+}
+/* input box Responsive*/
+@media screen and (max-width:600px){
+  .forms{
+    width: 90%;
+    margin: 35% auto;
+  }
+}
+/* CSS FOR FOOTER */
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.footer_start{
+  line-height: 1.5;
+  font-family: 'poppins',sans-serif;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container1{
+  max-width: 1170px;
+  margin: auto;
+}
+ol,ul {
+  padding-left: 0rem;
+}
+ul{
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer{
+  background-color: rgb(0, 0, 0);
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+#foot_heading{
+  font-size: 20px;
+}
+#foot_links a{
+  font-size: 16px;
+}
+@media(max-width: 1227px){
+  .card-body p{
+      display: none;
+    }
+    .card-body h4{
+      font-size: 15px;
+    }
+  }
+.footer-col h4{
+  font-size: 27px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li a{
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+.footer-col ul li a:hover{
+  font-size: 17px;
+  color: red;
+  text-decoration: none;
+  font-weight: 300;
+  padding-left: 3px;
+  /* padding-top: 15px; */
+}
+.social-links a{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 300;
+}
+.social-links a:hover{
+  color: red;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 300;
+}
+@media(max-width: 1227px){
+.footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }}
+.footer-col h4{
+      font-size: 15px;
+      color: white;
+      text-transform: capitalize;
+      margin-bottom: 25px;
+      font-weight: 500;
+      position: relative;
+    }
+.footer-col h4::before{
+      content: ' ';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+}
+.footer-col ul li a{
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  /* padding-top: 15px; */
+}
+.footer-col ul li a:hover{
+  font-size: 13px;
+  color: red;
+  text-decoration: none;
+  font-weight: 300;
+  padding-left: 5px;
+  /* padding-top: 15px; */
+}
+.social-links a{
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 300;
+}
+.social-links a:hover{
+  color: red;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 300;
+}
